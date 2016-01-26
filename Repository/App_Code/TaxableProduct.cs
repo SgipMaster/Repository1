@@ -8,7 +8,7 @@ using System.Web;
 /// </summary>
 public class TaxableProduct : Product //means that the TaxableProduct inherits from Product
 {
-	//Private member variable for taxrat
+	//Private member variable for taxrate
 	private decimal taxRate = 1.15M;
 
 	//public propertythat provides access to the TotalPrice (price + tax)
