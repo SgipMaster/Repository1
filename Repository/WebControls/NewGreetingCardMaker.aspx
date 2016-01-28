@@ -29,11 +29,11 @@
 				<asp:radiobuttonlist ID="lstBorder" runat="server" Height="59px" Width="177px" Font-Size="X-Small"></asp:radiobuttonlist>
 				<br /><br />
 				<asp:CheckBoxList ID="picList" runat="server">
-					<asp:ListItem Value="bithday.png">Birthday</asp:ListItem>
+					<asp:ListItem Value="birthday.png">Birthday</asp:ListItem>
 					<asp:ListItem Value="christmas.png">Christmas</asp:ListItem>
 					<asp:ListItem Value="get_well.gif">Get Well</asp:ListItem>
 					<asp:ListItem Value="graduation.jpg">Graduation</asp:ListItem>
-					<asp:ListItem Value="valentine.jpeg">Valentine</asp:ListItem>
+					<asp:ListItem Value="valentine.jpg">Valentine</asp:ListItem>
 				</asp:CheckBoxList>
                 <br /><br />
 				Enter the greeting text below:<br />

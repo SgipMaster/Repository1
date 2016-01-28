@@ -92,7 +92,7 @@ namespace GreetingCardMaker
 					PlaceHolder1.Controls.Add(i);
 				}
 			}
-			// Set the text.
+			// Set the text
 			lblGreeting.Text = txtGreeting.Text;
 		}
 	}
