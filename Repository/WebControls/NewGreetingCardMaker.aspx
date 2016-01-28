@@ -9,7 +9,7 @@
 	<body>
 		<form runat="server">
 		  <div>
-			<div style="BORDER-RIGHT: thin ridge; PADDING-RIGHT: 20px; BORDER-TOP: thin ridge; PADDING-LEFT: 20px; FONT-SIZE: x-small; PADDING-BOTTOM: 20px; BORDER-LEFT: thin ridge; WIDTH: 293px; PADDING-TOP: 20px; BORDER-BOTTOM: thin ridge; FONT-FAMILY: Verdana; HEIGHT: 486px; BACKGROUND-COLOR: lightyellow">Choose 
+			<div style="BORDER-RIGHT: thin ridge; PADDING-RIGHT: 20px; BORDER-TOP: thin ridge; PADDING-LEFT: 20px; FONT-SIZE: x-small; PADDING-BOTTOM: 20px; BORDER-LEFT: thin ridge; WIDTH: 293px; PADDING-TOP: 20px; BORDER-BOTTOM: thin ridge; FONT-FAMILY: Verdana; HEIGHT: 512px; BACKGROUND-COLOR: lightyellow">Choose 
 				a background color:<br />
 				<asp:dropdownlist ID="lstBackColor" runat="server" Height="22px" Width="194px" AutoPostBack="true" OnSelectedIndexChanged="ControlChanged">
                     <asp:ListItem Value="White"></asp:ListItem>
@@ -46,7 +46,7 @@
 			</div>
 			<asp:panel ID="pnlCard" style="Z-INDEX: 101; LEFT: 350px; POSITION: absolute; TOP: 16px" runat="server" 
 			Height="507px" Width="339px" HorizontalAlign="Center"><br />&nbsp; 
-			    <asp:Label ID="lblGreeting" runat="server" Height="150px" Width="256px"></asp:Label>
+			    <asp:Label ID="lblGreeting" runat="server" Width="325px"></asp:Label>
 			    <br /><br /><br />
 				<asp:PlaceHolder ID="picHolder" runat="server"></asp:PlaceHolder>
 				<br />

@@ -89,6 +89,7 @@ namespace GreetingCardMaker
 					//instatiate a new image control and add it to the placeholder
 					System.Web.UI.WebControls.Image i = new System.Web.UI.WebControls.Image();
 					i.ImageUrl = li.Value;
+					i.Height = 125;
 					picHolder.Controls.Add(i);
 				}
 			}
