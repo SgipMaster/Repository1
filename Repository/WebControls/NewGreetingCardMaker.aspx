@@ -45,7 +45,7 @@
 				<asp:button ID="cmdUpdate" runat="server" Height="24px" Width="71px" Text="Update" onclick="cmdUpdate_Click"></asp:button>
 			</div>
 			<asp:panel ID="pnlCard" style="Z-INDEX: 101; LEFT: 350px; POSITION: absolute; TOP: 16px" runat="server" 
-			Height="507px" Width="339px" HorizontalAlign="Center"><br />&nbsp; 
+			Height="507px" Width="339px"  HorizontalAlign="Center"><br />&nbsp; 
 			    <asp:Label ID="lblGreeting" runat="server" Width="325px"></asp:Label>
 			    <br /><br /><br />
 				<asp:PlaceHolder ID="picHolder" runat="server"></asp:PlaceHolder>
