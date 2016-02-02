@@ -100,6 +100,7 @@ namespace GreetingCardMaker
 				fromlabel.Text = "From: " + nameBox.Text;
 			else
 				fromlabel.Text = null;
+
 		}
 
 		protected void ControlChanged(object sender, EventArgs e)
