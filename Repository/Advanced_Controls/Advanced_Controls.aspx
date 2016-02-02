@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-		<asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Solid" CellSpacing="1" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="250px" NextPrevFormat="ShortMonth" OnDayRender="Calendar1_DayRender" OnSelectionChanged="Calendar1_SelectionChanged" Width="330px">
+		<asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Solid" CellSpacing="1" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="244px" NextPrevFormat="ShortMonth" OnDayRender="Calendar1_DayRender" OnSelectionChanged="Calendar1_SelectionChanged" Width="328px">
 			<DayHeaderStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" Height="8pt" />
 			<DayStyle BackColor="#CCCCCC" />
 			<NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="White" />
@@ -19,7 +19,11 @@
 			<TodayDayStyle BackColor="#999999" ForeColor="White" />
 		</asp:Calendar>
 		<asp:Label ID="SelectDatePnl" runat="server"></asp:Label>
+		<br /><br /><br />
+		<div>
+			<asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Advanced_Controls/adFile.xml" OnAdCreated="AdRotator1_AdCreated" />
+		</div>
     </div>
-    </form>
+	</form>
 </body>
 </html>

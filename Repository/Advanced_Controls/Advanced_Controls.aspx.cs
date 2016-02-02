@@ -60,4 +60,5 @@ public partial class Advanced_Controls_Advanced_Controls : System.Web.UI.Page
 		else
 			SelectDatePnl.Text += "This date is " + name + "'s Birthday.<br />";
 	}
+
 }
