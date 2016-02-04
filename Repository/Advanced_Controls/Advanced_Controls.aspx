@@ -20,6 +20,10 @@
 		</asp:Calendar>
 		<asp:Label ID="SelectDatePnl" runat="server"></asp:Label>
 		<br /><br /><br />
+		<asp:FileUpload ID="Uploader" runat="server" OnDisposed="cmdUpload_Click" />
+		<asp:Button ID="Button" runat="server" Text="Upload" OnClick="cmdUpload_Click" />
+		<br />
+		<asp:Label ID="lblInfo" runat="server"></asp:Label>
 	    </div>
 	</form>
 </body>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -7,9 +8,12 @@ using System.Web.UI.WebControls;
 
 public partial class Advanced_Controls_Advanced_Controls : System.Web.UI.Page
 {
+	private string uploadDirectory;
+
 	protected void Page_Load(object sender, EventArgs e)
 	{
-
+		//Place files in a website subfolder named Uploads
+		uploadDirectory = Path.Combine(Request.PhysicalApplicationPath, "Advanced_Controls/Uploads");
 	}
 
 	protected void Calendar1_SelectionChanged(object sender, EventArgs e)
@@ -61,4 +65,42 @@ public partial class Advanced_Controls_Advanced_Controls : System.Web.UI.Page
 			SelectDatePnl.Text += "This date is " + name + "'s Birthday.<br />";
 	}
 
+	protected void cmdUpload_Click(object sender, EventArgs e)
+	{
+		//check that file is actually being submitted
+		if(Uploader.PostedFile.FileName == "")
+			lblInfo.Text = "No file specified";
+		else
+		{
+			//check the extention
+			string extention = Path.GetExtension(Uploader.PostedFile.FileName);
+
+			switch (extention.ToLower())
+			{
+				case ".bmp":
+				case ".gif":
+				case ".jpg":
+					break;
+				default:
+					lblInfo.Text = "This file type is not allowed.";
+					return;
+			}
+
+			//Using this code, the saced file will retain its original file name when it's placed on the server
+			string serverFileName = Path.GetFileName(Uploader.PostedFile.FileName);
+			string fullUploadPath = Path.Combine(uploadDirectory, serverFileName);
+
+			try
+			{
+				Uploader.PostedFile.SaveAs(fullUploadPath);
+				lblInfo.Text = "File " + serverFileName;
+				lblInfo.Text += " uploaded successfully to";
+				lblInfo.Text += fullUploadPath;
+			}
+			catch (Exception err)
+			{
+				lblInfo.Text = err.Message;
+			}
+		}
+	}
 }

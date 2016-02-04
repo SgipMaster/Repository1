@@ -11,7 +11,7 @@
    <!-- Headers and links to repository pages go here -->
 
 	<h3>C#</h3>
-	<a href="C-Sharp/ProductCatalogTest.aspx" target="_blank">ProductCatalogTest.aspx</a>
+	<a href="C-Sharp/ProductCatalogTest.aspx">ProductCatalogTest.aspx</a>
 	<h3>Web Form Fundementals</h3>
 	<a href="WebForm/CurrencyConverter.aspx">CurrencyConverter.aspx</a>
 	<h3>Web Controls</h3>
