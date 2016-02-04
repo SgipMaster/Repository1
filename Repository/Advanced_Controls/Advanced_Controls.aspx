@@ -20,10 +20,7 @@
 		</asp:Calendar>
 		<asp:Label ID="SelectDatePnl" runat="server"></asp:Label>
 		<br /><br /><br />
-		<div>
-			<asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Advanced_Controls/adFile.xml" OnAdCreated="AdRotator1_AdCreated" />
-		</div>
-    </div>
+	    </div>
 	</form>
 </body>
 </html>

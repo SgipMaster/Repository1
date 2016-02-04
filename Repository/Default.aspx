@@ -18,4 +18,7 @@
 	<a href="WebControls/NewGreetingCardMaker.aspx">NewGreetingCardMaker.aspx</a>
 	<h3>Advanced Controls</h3>
 	<a href="Advanced_Controls/Advanced_Controls.aspx">Advanced_Controls.aspx</a>
+	<h3>User Controls and Master Pages</h3>
+	<a href="UCMP/FooterHost.aspx">FooterHost.aspx</a>
+	<a href="UCMP/ChangeMaster.aspx">ChangeMaster.aspx</a>
 </asp:Content>
