@@ -5,7 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 			<div class="header">
 				<div>
-					<img src="images/satellite.png" alt="" class="satellite">
+					<asp:Image ID="LogoImage" ImageUrl="images/logo.png" runat="server" />
+					<asp:Button ID="Button1" runat="server" Text="ChangeImage" OnClick="Button1_Click" />
 					<h1>SOYUZ TMA-M</h1>
 					<h2>SPACECRAFT</h2>
 					<a href="blog.html" class="more">Read More</a>
